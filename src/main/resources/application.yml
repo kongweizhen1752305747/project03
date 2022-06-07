@@ -1,0 +1,15 @@
+#连接数据库
+spring:
+  thymeleaf:
+    cache: false
+    check-template-location: true
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/db_crs
+    username: root
+    password: kwz..123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
